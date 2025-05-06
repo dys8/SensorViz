@@ -1,3 +1,6 @@
+# Duygu Sap
+# Feb 2025
+
 import matplotlib.pyplot as plt
 
 points = [(0.5, 1.813), (2, 0.35), (2.346, 1.75), (1.25, 0.45), (1.25, 2), (1.5, 1.1), (1, 1.240)]
