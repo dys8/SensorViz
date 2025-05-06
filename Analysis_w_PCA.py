@@ -26,7 +26,7 @@ def generate_time_series(duration=80, sampling_rate=20, num_peaks=3, noise_std=0
     return time, signal, noisy_signal, peak_times
 
 
-def sliding_window_embedding1(time_series, embedding_dim, tau):
+def sliding_window_embedding(time_series, embedding_dim, tau):
     N = len(time_series)
     point_cloud = []
     for t in range(N - (embedding_dim - 1) * tau):
