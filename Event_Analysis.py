@@ -34,6 +34,8 @@ def compute_persistence_diagram(point_cloud):
 def compute_tau(time_series, threshold=0.3, max_lags=100):
     correlation = acf(time_series, fft=True, nlags=max_lags)
     tau = np.argmax(correlation < threshold)
+    if tau==0:
+        tau=1
 
     if plt:
         plt.figure(figsize=(8, 5))
